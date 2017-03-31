@@ -1,9 +1,10 @@
-#HatfieldCC640
+HatfieldCC640
+=============
 
 The Campbell Scientific CC640 camera sends images without metadata like timestamps. Using Tesseract OCR does not work on recognizing the text in the timestamp banner. This attempts to train a neural network to recognize months from the timestamp banner.
 
 
-Requirement:
+Requirements:
 - docker
 - python 2
 - wget
@@ -12,20 +13,14 @@ Requirement:
 - pip install keras
 
 Steps:
-1. Download all available CC640 timelapse videos from UAlberta
+1. Download all available CC640 timelapse videos from UAlberta `sh getAllStreams.sh`
 
-    sh getAllStreams.sh
-
-2. Split videos into individual frames
-
-    sh getAllFrames.sh
+2. Split videos into individual frames `sh getAllFrames.sh`
 
 Optional:
-Crop all images to tiles
+Crop all images to tiles `sh cropStillsToAllTiles.sh`
 
-    sh cropStillsToAllTiles.sh
-
-Find tiles under danielTiles/
+Find tiles under danielTiles.
 
 3. Crop 2010 images to rough month stamp
 
