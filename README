@@ -1,0 +1,15 @@
+1. sh getAllStreams.sh
+2. sh getAllFrames.sh
+
+THEN CROP IMAGES TO TILES
+
+> sh cropStillsToAllTiles.sh
+
+Find tiles under danielTiles/
+
+Things needed:
+- python 2
+- wget
+- imagemagick
+- ffmpeg
+- pip install image_slicer
