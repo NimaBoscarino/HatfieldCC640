@@ -24,6 +24,10 @@ Find tiles under danielTiles.
 
 3. Crop 2010 images to rough month stamp
 
-4. Augment image data
+4. Separate take top 150 images from each month, copy to new folder for training + validation data
 
-5. Pump into TensorFlow for bottleneck creation and testing
+5. Augment image data `python keras_warp.py Months`
+
+6. Pump into TensorFlow for bottleneck creation and testing `train.sh`
+
+Or if you're feeling cool, do it all at once with `sh justMessMeUp.sh`
