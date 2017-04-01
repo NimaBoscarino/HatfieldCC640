@@ -7,10 +7,11 @@ The Campbell Scientific CC640 camera sends images without metadata like timestam
 Requirements:
 - docker
 - python 2
-- wget
-- imagemagick
-- ffmpeg
-- pip install keras
+- wget (`brew install wget` if on macOS)
+- imagemagick (`brew install imagemagick` if on macOS)
+- ffmpeg (`brew install ffmpeg` if on macOS)
+- sudo pip install keras
+- sudo pip install tensorflow
 
 Steps:
 1. Download all available CC640 timelapse videos from UAlberta `sh getAllStreams.sh`
