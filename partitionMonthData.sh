@@ -12,7 +12,7 @@ for month in `ls`; do
 
     for file in $(ls -p | grep -v / | head -150)
     do
-        convert $file ../Months/$month/${file%.*}.jpg
+        convert $file ../../Months/$month/${file%.*}.jpg
     done
 
     cd ..

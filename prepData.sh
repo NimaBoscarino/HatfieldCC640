@@ -1,3 +1,4 @@
+#!/bin/sh
 sh getAllStreams.sh
 sh getAllFrames.sh
 sh cropStillsToCharTiles.sh

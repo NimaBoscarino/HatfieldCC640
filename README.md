@@ -28,6 +28,8 @@ Find tiles under danielTiles.
 
 5. Augment image data `python keras_warp.py Months`
 
-6. Pump into TensorFlow for bottleneck creation and testing `train.sh`
+6. Prepare and launch docker image with `dockerPrep.sh`
 
-Or if you're feeling cool, do it all at once with `sh justMessMeUp.sh`
+7. Now in docker, pump into TensorFlow for bottleneck creation and testing: `sh /tf_files/train.sh`
+
+If you're feeling cool, skip steps 1 - 6 with `sh prepData.sh`, and then do step 7.
