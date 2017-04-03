@@ -2,7 +2,7 @@
 # Bunch of docker stuff
 
 mkdir $HOME/tf_files
-cp -r Months $HOME/tf_files/Months
+cp -r Months $HOME/tf_files
 cp train.sh $HOME/tf_files
 
 cd $HOME/tf_files
